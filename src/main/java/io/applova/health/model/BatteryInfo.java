@@ -2,7 +2,6 @@ package io.applova.health.model;
 
 import io.applova.health.model.id.BatteryInfoId;
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity

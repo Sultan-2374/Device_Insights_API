@@ -81,6 +81,9 @@ public class DeviceInfoService {
         storageInfo.setUpdatedTime(LocalDateTime.now());
         storageInfo.setDeviceInfo(deviceInfo);
 
+        deviceInfo.setBatteryInfo(batteryInfo);
+        deviceInfo.setNetworkInfo(networkInfo);
+        deviceInfo.setStorageInfo(storageInfo);
         // Persist all entities
         deviceInfoRepository.save(deviceInfo);
         batteryInfoRepository.save(batteryInfo);

@@ -1,7 +1,7 @@
 package io.applova.health.model;
+
 import io.applova.health.model.id.NetworkInfoId;
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
