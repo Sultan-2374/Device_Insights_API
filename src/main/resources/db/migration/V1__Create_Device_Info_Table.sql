@@ -1,4 +1,4 @@
-CREATE TABLE device_info (
+CREATE TABLE IF NOT EXISTS device_info (
                              device_id VARCHAR(255) NOT NULL,
                              business_id VARCHAR(255) NOT NULL,
                              device_name VARCHAR(255),
@@ -6,7 +6,7 @@ CREATE TABLE device_info (
                              model VARCHAR(255),
                              android_version VARCHAR(50),
                              sdk_version VARCHAR(50),
-                             created_time DATETIME,
-                             updated_time DATETIME,
+                             created_time TIMESTAMP,
+                             updated_time TIMESTAMP,
                              PRIMARY KEY (device_id, business_id)
 );
